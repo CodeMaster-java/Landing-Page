@@ -1,202 +1,278 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gustavo André">
-    <meta name="keywords" content="html, css">
-    <meta name="description" content="Página de Landing Pages">
-    <title>Umbrella Education</title>
+    <meta name="description" content="Umbrella Education – plataforma de aprendizagem híbrida com trilhas personalizadas e suporte humano.">
+    <title>Umbrella Education | Aprendizagem Sem Limites</title>
 
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/imagens/logo.png" type="image/png">
 </head>
 
 <body>
-    <header>
-        <menu>
-            <img id="logo" class="logo" src="imagens/logo.png" alt="Logo Umbrella">
+    <header class="site-header" id="inicio">
+        <nav class="top-nav" aria-label="Navegação principal">
+            <a class="brand" href="#inicio">
+                <img class="brand-logo" src="assets/imagens/logo.png" alt="Logotipo Umbrella Education">
+                <span>Umbrella Education</span>
+            </a>
 
-            <a class="guias" href="#">Ínicio</a>
-            <a class="guias" href="#">Tutoria online</a>
-            <a class="guias" href="#">Contatos</a>
+            <ul class="nav-links">
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-            <div>
-                <button id="btn" class="btn">Crie sua conta</button>
-                <button class="btn">Entrar</button>
+            <div class="nav-actions">
+                <a class="button button-ghost" href="#contato">Fale conosco</a>
+                <a class="button button-primary" href="#cta">Criar conta</a>
             </div>
-        </menu>
+        </nav>
 
-        <main>
-            <div id="conteudo">
-                <h1>Experiência de um novo mundo.</h1>
-                <p>A educação é o farol que ilumina o caminho para um futuro mais promissor, tanto para indivíduos
-                    quanto
-                    para sociedades inteiras. Portanto, valorize cada oportunidade de aprendizado, e nunca subestime o
-                    impacto transformador da educação. Ela é a força motriz por trás de inovações, progresso e
-                    crescimento,
-                    capacitando-nos a enfrentar os desafios do presente e a construir um amanhã melhor.
-                </p>
-                <button class="btn">Iniciar</button>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Educação que move</p>
+                <h1>Experiências imersivas para desbloquear novos mundos</h1>
+                <p>Trilhas personalizadas, mentores certificados e tecnologia que potencializa o aprendizado em todas as
+                    etapas. A Umbrella conecta inovação, empatia e resultados para escolas, empresas e estudantes.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#programas">Explorar trilhas</a>
+                    <a class="button button-ghost" href="#experiencias">Conhecer hub</a>
+                </div>
+                <dl class="hero-stats" aria-label="Indicadores de impacto">
+                    <div>
+                        <dt>+45 mil</dt>
+                        <dd>alunos ativos</dd>
+                    </div>
+                    <div>
+                        <dt>92%</dt>
+                        <dd>de satisfação média</dd>
+                    </div>
+                    <div>
+                        <dt>18 países</dt>
+                        <dd>conectados em nossa rede</dd>
+                    </div>
+                </dl>
             </div>
 
-            <figure><img src="imagens/inovação.png" alt="Personagem flutuante."></figure>
-        </main>
+            <figure class="hero-figure">
+                <img src="assets/imagens/inovação.png" alt="Ilustração futurista de estudante flutuando entre telas">
+            </figure>
+        </section>
     </header>
 
-    <section>
-        <h2 class="assunto">O que nós fornecemos</h2>
-
-        <div class="seçao">
-            <span class="segmentos">
-                <img src="imagens/alvo.png" alt="Ilustração de alvo.">
-                <p>Oferecemos uma educação holística, visando o desenvolvimento integral dos alunos em todos os aspectos da vida.</p>
-            </span>
-
-            <span class="segmentos">
-                <img src="imagens/peça-xadrex.png" alt="Ilustração de peça-xadrex.">
-                <p>Preparamos os alunos não apenas para desafios acadêmicos, mas também para enfrentar os desafios do mundo real.</p>
-            </span>
-
-            <span class="segmentos">
-                <img src="imagens/simbol-education.png" alt="Ilustração de chapéu sobre a mão.">
-                <p>Priorizamos um ambiente escolar seguro, acolhedor e inclusivo, onde cada aluno se sinta valorizado e respeitado</p>
-            </span>
-        </div>
-    </section>
-
-    <section>
-        <header>
-            <h2>Crie áreas de experiências</h2>
-            <p>Na jornada da educação, as dificuldades são os degraus que nos levam ao conhecimanto.<br> Portanto, temos
-                extensões onde abragem área para concentração e métodos de foco.</p>
-        </header>
-
-        <div class="subdivisao">
-            <div class="areas">
-                <span class="segmentos">
-                    <img src="imagens/martelo.png" alt="Figura de um martelo">
-                    <h4>Hyperfoco</h4>
-                    <p>Meios de concentração usadas para produção de diferentes tarefas. Aqui você entra em contato com si mesmo.</p>
-                </span>
-
-                <span class="segmentos">
-                    <img src="imagens/edição.png" alt="Figura de edição">
-                    <h4>Designer Gráfico</h4>
-                    <p>A estética é a ponte entre a arte e o design. Combinando forma e função para cirar experiências visuais memoráveis.</p>
-                </span>
-
-                <span class="segmentos">
-                    <img src="imagens/linguagem.png" alt="Figura de planeta e linguagem">
-                    <h4>Cursos de Inglês</h4>
-                    <p>Aprenda mais com nossos variados cursos de linguagem.</p>
-                </span>
-
-                <span class="segmentos">
-                    <img src="imagens/rede-global.png" alt="Figura de banco de dados">
-                    <h4>Banco de Dados</h4>
-                    <p>Aprofundando no conhecimento sobre servidores e administração de banco de dados.</p>
-                </span>
+    <main>
+        <section class="features" id="programas">
+            <div class="section-header">
+                <p class="eyebrow">O que entregamos</p>
+                <h2>Formação integral com foco em futuro</h2>
+                <p>Do socioemocional ao domínio técnico, nossas trilhas combinam mentorias ao vivo, desafios práticos e
+                    analytics de aprendizagem para acelerar resultados.</p>
             </div>
 
-            <div class="container">
-                <img src="imagens/working.png" alt="Personagem usando notebook.">
+            <div class="feature-grid" role="list">
+                <article class="feature-card" role="listitem">
+                    <img src="assets/imagens/alvo.png" alt="Ícone de alvo" class="feature-icon">
+                    <h3>Trilhas personalizadas</h3>
+                    <p>Diagnóstico contínuo para adaptar conteúdos e garantir o desenvolvimento integral de cada pessoa.</p>
+                </article>
+
+                <article class="feature-card" role="listitem">
+                    <img src="assets/imagens/peça-xadrex.png" alt="Ícone de estratégia" class="feature-icon">
+                    <h3>Mentoria estratégica</h3>
+                    <p>Professores e especialistas conectados para preparar estudantes para desafios reais e carreiras emergentes.</p>
+                </article>
+
+                <article class="feature-card" role="listitem">
+                    <img src="assets/imagens/simbol-education.png" alt="Ícone de graduação" class="feature-icon">
+                    <h3>Ambiente inclusivo</h3>
+                    <p>Comunidades seguras e acolhedoras, com suporte emocional e recursos de acessibilidade.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <figure>
-        <img src="imagens/dados1.png" alt="Demonstração de dados da organização">
-        <img src="imagens/dados2.png" alt="Demonstração de dados da organização">
-        <img src="imagens/dados3.png" alt="Demonstração de dados da organização">
-    </figure>
+        <section class="experiences" id="experiencias">
+            <div class="section-header">
+                <p class="eyebrow">Hub de experiências</p>
+                <h2>Crie espaços para aprender, aplicar e compartilhar</h2>
+                <p>Nossos ambientes híbridos unem coworkings educacionais, laboratórios makers e salas de imersão para
+                    estimular foco, colaboração e criatividade.</p>
+            </div>
 
-    <aside>
-        <h2>Perguntas Frequentes</h2>
+            <div class="experiences-grid">
+                <div class="experience-list">
+                    <article class="experience-card">
+                        <img src="assets/imagens/martelo.png" alt="Ícone de martelo" class="experience-icon">
+                        <div>
+                            <h3>Laboratório Hyperfoco</h3>
+                            <p>Rituais de concentração, biogramas de energia e mentoria cognitiva para elevar a produtividade.</p>
+                        </div>
+                    </article>
 
-        <div class="perguntas">
-            <h3>-Onde ver as notas?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est in neque asperiores ut illo ipsum
-                necessitatibus, voluptates temporibus ratione ex, vero quibusdam facilis unde perferendis placeat esse
-                et deleniti perspiciatis.</p>
+                    <article class="experience-card">
+                        <img src="assets/imagens/edição.png" alt="Ícone de edição" class="experience-icon">
+                        <div>
+                            <h3>Estúdio de Design</h3>
+                            <p>Módulos hands-on de design gráfico e motion com feedback de líderes criativos.</p>
+                        </div>
+                    </article>
 
-            <h3>-O que é vestibular e como funciona?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quam ipsum iure totam ullam labore
-                laborum tempora id consequatur soluta porro fuga ab repudiandae adipisci architecto, autem culpa et
-                deserunt.</p>
+                    <article class="experience-card">
+                        <img src="assets/imagens/linguagem.png" alt="Ícone de planeta" class="experience-icon">
+                        <div>
+                            <h3>Idiomas para o mundo</h3>
+                            <p>Cursos de inglês e espanhol com dinâmica cultural e acompanhamentos semanais.</p>
+                        </div>
+                    </article>
 
-            <h3>-Para que serve o vestibular?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis temporibus maiores ut repudiandae
-                tenetur vero. Quasi nostrum repudiandae, facere, itaque ratione earum voluptates quo sed illo harum
-                voluptate soluta?</p>
+                    <article class="experience-card">
+                        <img src="assets/imagens/rede-global.png" alt="Ícone de rede" class="experience-icon">
+                        <div>
+                            <h3>Data Studio</h3>
+                            <p>Imersão em banco de dados, ciência de dados e governança para projetos críticos.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>-Onde ver o Vestibular?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vel amet quia repellendus consequuntur at,
-                ex, maxime vero suscipit corporis, enim consectetur eligendi laborum fugiat ratione aspernatur beatae
-                reprehenderit adipisci?</p>
+                <figure class="experience-figure">
+                    <img src="assets/imagens/working.png" alt="Estudante utilizando notebook em espaço colaborativo">
+                </figure>
+            </div>
+        </section>
 
-            <h3>-Qual o tempo de duração do vestibular?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque praesentium nesciunt quis blanditiis
-                officiis, sequi sunt recusandae omnis incidunt alias libero obcaecati eius dolorum quibusdam nihil
-                dolore? Itaque, recusandae accusantium!</p>
+        <section class="insights" aria-label="Indicadores de desempenho">
+            <img src="assets/imagens/dados1.png" alt="Painel de dados sobre evolução de estudantes">
+            <img src="assets/imagens/dados2.png" alt="Gráfico com taxa de engajamento mensal">
+            <img src="assets/imagens/dados3.png" alt="Dashboard de indicadores de aprendizagem">
+        </section>
 
-            <h3>-Quando posso fazer o vestibular?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nisi eum qui sit illum aliquid quos
-                maxime tempore corrupti aspernatur, perspiciatis hic magni soluta cum vero dolore laborum? Voluptates,
-                esse.</p>
-        </div>
-    </aside>
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="section-header">
+                <p class="eyebrow">Perguntas frequentes</p>
+                <h2 id="faq-title">Transparência em cada etapa da jornada</h2>
+                <p>Separamos respostas objetivas para as dúvidas mais comuns sobre vestibulares, avaliações e suporte
+                    Umbrella.</p>
+            </div>
 
-    <article>
-        <img src="imagens/engrenagem.png" alt="Personagem sobre engrenagem.">
-        <blockquote cite="...">
-            <q>O conhecimento é a chave que desbloqueia portas para um futuro repleto de possibilidades. Cada página que
-                você lê, cada fórmula que domina e cada ideia que compreende são degraus que o levarão a alcançar seus
-                objetivos. O estudo não é apenas uma obrigação, é a estrada que o conduzirá ao sucesso. Portanto,
-                mergulhe de cabeça nos livros, desvende os segredos do conhecimento e trilhe seu caminho rumo ao êxito
-                que você merece. Lembre-se, o estudo é a luz que ilumina o seu caminho para o futuro brilhante.</q>
-            <p>-Tomas Wayne.</p>
-        </blockquote>
-    </article>
+            <div class="faq-list">
+                <details>
+                    <summary>Onde acompanho minhas notas?</summary>
+                    <p>As notas ficam disponíveis no painel Umbrella 24h após a liberação do professor. Você pode
+                        receber alertas automáticos por e-mail ou app mobile.</p>
+                </details>
 
-    <footer>
-        <div id="rodape">
-            <img class="logo" src="imagens/logo.png" alt="Logo Umbrella">
-            <p>Umbrella fazendo a diferença. Acesse nossas redes sociais.</p>
-            <a href="#"><img src="imagens/facebook.png" alt="Logo Facebook"></a>
-            <a href="#"><img src="imagens/arroba.png" alt="Logo E-mail"></a>
-            <a href="#"><img src="imagens/youtube.png" alt="Logo Youtube"></a>
-            <a href="#"><img src="imagens/twitter.png" alt="Logo Tiwtter"></a>
-        </div>
+                <details>
+                    <summary>Como funciona o vestibular Umbrella?</summary>
+                    <p>O processo é 100% digital, com simulados adaptativos e entrevistas síncronas. O candidato progride
+                        de acordo com o desempenho em trilhas diagnósticas.</p>
+                </details>
 
-        <div class="rodape">
-            <h3>Educare</h3>
-            <a href="#">Nossa história</a>
-            <a href="#">Jornada do Aluno</a>
-            <a href="#">Certificado</a>
-            <a href="#">Trabalhe Conosco</a>
-            <a href="#">Canal de Privacidade</a>
-        </div>
+                <details>
+                    <summary>Por que o vestibular é relevante?</summary>
+                    <p>Ele garante aderência ao curso escolhido e indica trilhas preparatórias para fortalecer competências
+                        essenciais antes do início das aulas.</p>
+                </details>
 
-        <div class="rodape">
-            <h3>Cursos</h3>
-            <a href="#">Graduação</a>
-            <a href="#">Pós-graduação</a>
-            <a href="#">Cursos Técnicos</a>
-            <a href="#">Cursos Profissionalizantes</a>
-            <a href="#">Cursos Livres</a>
-        </div>
+                <details>
+                    <summary>Onde encontro cronogramas?</summary>
+                    <p>Os calendários oficiais ficam no painel de eventos e são atualizados quinzenalmente com links para
+                        lives, simulados e plantões de dúvidas.</p>
+                </details>
 
-        <div class="rodape">
-            <h3>Ouvidoria</h3>
-            <a href="#">Sou Aluno</a>
-            <a href="#">Sou Candidato</a>
-            <a href="#">Sou Ex-aluno</a>
-            <a href="#">Fale Conosco</a>
-            <a href="#">Acessibilidade</a>
-            <a href="#">Biblioteca</a>
-        </div>
+                <details>
+                    <summary>Qual a duração média das provas?</summary>
+                    <p>As provas contam com duas janelas: 90 minutos para objetiva adaptativa e 60 minutos para redação ou
+                        estudo de caso.</p>
+                </details>
+
+                <details>
+                    <summary>Quando posso realizar o vestibular?</summary>
+                    <p>Oferecemos ciclos mensais, com possibilidade de reagendamento em até 48h antes da aplicação.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="testimonial" aria-labelledby="testimonial-title">
+            <figure class="testimonial-figure">
+                <img src="assets/imagens/engrenagem.png" alt="Ilustração de profissional em engrenagem tecnológica">
+            </figure>
+            <blockquote>
+                <p id="testimonial-title">“Conhecimento é a chave que abre futuros expansivos.”</p>
+                <p>“Cada projeto e cada mentor na Umbrella foi essencial para sair do aprendizado passivo e construir
+                    soluções concretas. A cultura de experimentação nos prepara para criar impacto real.”</p>
+                <cite>— Tomas Wayne, CIO na FutureLabs</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+        <section class="cta" id="cta">
+            <div class="cta-card">
+                <h2>Pronto para impulsionar sua jornada?</h2>
+                <p>Crie sua conta em minutos e tenha acesso a trilhas gratuitas, comunidade global e mentores ao vivo.</p>
+                <div class="cta-actions">
+                    <a class="button button-primary" href="#">Começar agora</a>
+                    <a class="button button-ghost" href="#">Falar com consultor</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-content">
+            <div class="footer-brand">
+                <img class="brand-logo" src="assets/imagens/logo.png" alt="Logotipo Umbrella Education">
+                <p>Umbrella Education — tecnologias, pessoas e propósito construindo experiências de aprendizagem.
+                </p>
+                <div class="social-links" aria-label="Redes sociais">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-columns">
+                <div>
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="#programas">Nossa história</a></li>
+                        <li><a href="#experiencias">Jornada do aluno</a></li>
+                        <li><a href="#faq">Certificações</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Trilhas</h3>
+                    <ul>
+                        <li><a href="#experiencias">Graduação</a></li>
+                        <li><a href="#experiencias">Pós & MBA</a></li>
+                        <li><a href="#experiencias">Tech Bootcamps</a></li>
+                        <li><a href="#experiencias">Soft Skills</a></li>
+                        <li><a href="#experiencias">Cursos livres</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#faq">Central de ajuda</a></li>
+                        <li><a href="#contato">Atendimento</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">Biblioteca digital</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <p class="footer-meta">© 2025 Umbrella Education. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
