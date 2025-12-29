@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gustavo André">
-    <meta name="keywords" content="html, css">
-    <meta name="description" content="Página de Landing Pages">
-    <title>Cubos</title>
+    <meta name="description" content="Página de login da Nova Cubos Technology">
+    <title>Nova Cubos | Entrar</title>
 
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/imagens/favicon-16x16.png" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <menu class="principal column">
-            <header>
-                <h2>Nova <span>Cubos</span> Tecnology</h2>
-                <p class="conteudo">Na busca incessante pela inovação, a seriedade é nossa aliada, pois cada avanço que
-                    fazemos molda o
-                    futuro da tecnologia.</p>
+    <div class="auth-layout">
+        <aside class="auth-hero" aria-label="Apresentação da Nova Cubos Technology">
+            <header class="hero-header">
+                <p class="hero-eyebrow">Nova</p>
+                <h1 class="hero-title">Cubos <span>Tecnology</span></h1>
+                <p class="hero-text">Na busca incessante pela inovação, a seriedade é nossa aliada. Cada avanço que
+                    fazemos molda o futuro da tecnologia.</p>
             </header>
 
-            <img src="imagens/viagem.jpg" alt="Ilustração da empresa" class="ilustracao">
+            <figure class="hero-figure">
+                <img src="assets/imagens/viagem.jpg" alt="Profissionais colaborando em um ambiente de inovação">
+            </figure>
 
-            <footer>
-                <p>Não tem uma conta?</p>
-                <a class="Inscrever" href="cubo02.html" target="_blank">Inscreva-se</a>
+            <footer class="hero-footer">
+                <p class="hero-cta-text">Ainda não tem conta?</p>
+                <a class="hero-cta" href="cubo02.html">Criar conta</a>
             </footer>
-        </menu>
+        </aside>
 
-        <main class="column">
-            <header>
-                <img src="imagens/cube.png" alt="Logo da empresa" class="logo">
-                <h1>Bem-vindo</h1>
-                <p>Entre usando seu e-mail e senha</p>
+        <main class="auth-card" aria-labelledby="auth-title">
+            <header class="auth-header">
+                <img src="assets/imagens/cube.png" alt="Logotipo Nova Cubos" class="auth-logo">
+                <h2 id="auth-title">Bem-vindo de volta</h2>
+                <p>Entre usando seu e-mail e senha para continuar.</p>
             </header>
 
-            <form action="#" method="post">
-
-                <div class="input-container">
-                    <input type="email" class="input-field" placeholder="E-mail" required>
-                    <label class="username-label" for="input-field">E-mail</label>
-                    <img src="imagens/user.png" alt="Usuário" class="userIcon">
+            <form class="auth-form" action="#" method="post">
+                <div class="field" data-field>
+                    <label for="email">E-mail</label>
+                    <div class="input-wrapper">
+                        <img src="assets/imagens/user.png" alt="" class="input-icon" aria-hidden="true">
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="nome@empresa.com" required>
+                    </div>
                 </div>
 
-                <div class="input-container">
-                    <input type="password" name="senha" class="input-field" placeholder="Senha" required>
-                    <label class="username-label" for="input-field">Senha</label>
-                    <img src="imagens/password.png" alt="Cadeado" class="userIcon">
+                <div class="field" data-field>
+                    <label for="password">Senha</label>
+                    <div class="input-wrapper">
+                        <img src="assets/imagens/password.png" alt="" class="input-icon" aria-hidden="true">
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+                    </div>
+                    <a class="field-link" href="#">Esqueceu a senha?</a>
                 </div>
 
+                <button type="submit" class="button button-primary">Entrar</button>
             </form>
-            <p class="aviso"><a href="#">Esqueceu a senha?</a></p>
-
-            <button type="submit" id="btn">Conecte-se</button>
         </main>
     </div>
 </body>

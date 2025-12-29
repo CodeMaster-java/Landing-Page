@@ -1,65 +1,80 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gustavo André">
-    <meta name="keywords" content="html, css">
-    <meta name="description" content="Página de Landing Pages">
-    <title>Página de Login</title>
+    <meta name="description" content="Cadastro na Nova Cubos Technology">
+    <title>Nova Cubos | Criar conta</title>
 
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="imagens/cube.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/imagens/cube.png" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <menu class="principal column">
-            <header>
-                <h2>Nova <span>Cubos</span> Tecnology</h2>
-                <p class="conteudo">Somos uma equipe de mentes brilhantes, unidos por um objetivo comum: redefinir o que
-                    é possível.
-                    Avancemos com confiança, inspiração e determinação, pois o mundo está esperando pelas soluções que
-                    apenas nós podemos criar.</p>
+    <div class="auth-layout">
+        <aside class="auth-hero" aria-label="Apresentação institucional">
+            <header class="hero-header">
+                <p class="hero-eyebrow">Nova</p>
+                <h1 class="hero-title">Cubos <span>Tecnology</span></h1>
+                <p class="hero-text">Somos uma equipe de mentes brilhantes, unidos por um objetivo comum: redefinir o que
+                    é possível. Avançamos com confiança, inspiração e determinação.</p>
             </header>
 
-            <img src="imagens/negocio.jpg" alt="Ilustração da empresa" class="ilustracao">
+            <figure class="hero-figure">
+                <img src="assets/imagens/negocio.jpg" alt="Equipe colaborando em um escritório moderno">
+            </figure>
 
-            <footer>
-                <p>Já tem uma conta? <span><a href="cubo.html" target="_self">Conecte-se</a></span></p>
+            <footer class="hero-footer">
+                <p class="hero-cta-text">Já faz parte da comunidade?</p>
+                <a class="hero-cta" href="cubo01.html">Entrar</a>
             </footer>
-        </menu>
+        </aside>
 
-        <main class="column secundario">
-            <header>
-                <img src="imagens/cube.png" alt="Logo da empresa" class="logo">
-                <h1>Criando uma nova conta</h1>
-                <p>Faça seu cadastro na Cubos usando seu nome, e-mail e senha</p>
+        <main class="auth-card" aria-labelledby="signup-title">
+            <header class="auth-header">
+                <img src="assets/imagens/cube.png" alt="Logotipo Nova Cubos" class="auth-logo">
+                <h2 id="signup-title">Crie sua conta</h2>
+                <p>Preencha seus dados para desbloquear experiências personalizadas.</p>
             </header>
 
-            <form action="#" method="post">
-
-                <div class="input-container">
-                    <input type="text" name="nome" class="input-field" placeholder="Nome" required>
-                    <label class="username-label" for="input-field">Nome</label>
+            <form class="auth-form" action="#" method="post">
+                <div class="field" data-field>
+                    <label for="name">Nome completo</label>
+                    <div class="input-wrapper">
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="Nome e sobrenome" required>
+                    </div>
                 </div>
 
-                <div class="input-container">
-                    <input type="email" name="email" class="input-field" placeholder="E-mail" required>
-                    <label class="username-label" for="input-field">E-mail</label>
+                <div class="field" data-field>
+                    <label for="signup-email">E-mail</label>
+                    <div class="input-wrapper">
+                        <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="nome@empresa.com" required>
+                    </div>
                 </div>
 
+                <div class="field" data-field>
+                    <label for="signup-password">Senha</label>
+                    <div class="input-wrapper">
+                        <input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="Crie uma senha forte" minlength="8" required>
+                    </div>
+                    <p class="field-hint">Use ao menos 8 caracteres com letras, números e símbolos.</p>
+                </div>
+
+                <div class="terms">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <label for="terms">Concordo com os <a href="#">termos de uso</a> e a <a href="#">política de privacidade</a>.</label>
+                </div>
+
+                <button type="submit" class="button button-primary">Criar conta</button>
             </form>
-            <p class="aviso">Ao clicar em "inscrever-se" você concorda com os termos e reconhece a <span><a
-                        href="#">política de privacidade</a></span> para criar uma conta no site.</p>
-
-            <a href="#"><input type="button" value="Continue"></a>
         </main>
+    </div>
 </body>
 
 </html>
