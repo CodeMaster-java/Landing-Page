@@ -1,202 +1,206 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gustavo André">
-    <meta name="keywords" content="html, css">
-    <meta name="description" content="Página de Landing Pages">
-    <title>Café</title>
+    <meta name="description" content="Landing page para amantes de café artesanal e experiências de torrefação.">
+    <title>Casa Café | Sabores que Inspiram</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="estilo03.css">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/imagens/logo.png" type="image/png">
 </head>
 
 <body>
-    <header>
-        <menu>
-            <img class="logo" src="imagens/logo.png" alt="logo">
+    <header class="site-header">
+        <nav class="top-nav" aria-label="Navegação principal">
+            <a class="brand" href="#inicio">
+                <img class="brand-logo" src="assets/imagens/logo.png" alt="Logotipo Casa Café">
+                <span>Casa Café</span>
+            </a>
 
-            <a href="#">Produto</a>
-            <a href="#">Empresa</a>
-            <a href="#">Contato</a>
-
-            <div>
-                <button class="btn-marrom">Inscreva-se</button>
-                <button class="btn-marrom">Entrar</button>
-            </div>
-        </menu>
-
-        <main>
-            <div>
-                <h1>DO CAFÉ PARA VIDA</h1>
-                <p>Enquanto saboreamos a bebida escura e aromática, as ideias fluem como um riacho suave, alimentando
-                    nossa mente com clareza e inspiração. O café é mais do que um estimulante; é um companheiro
-                    confiável que nos acompanha em nossa jornada diária. Cada gole é uma pausa para contemplação, uma
-                    oportunidade de apreciar os pequenos detalhes que muitas vezes passam despercebidos na correria da
-                    vida. A xícara de café se torna um portal para a contemplação, onde podemos refletir sobre nossos
-                    sonhos, metas e agradecer pelas oportunidades que se apresentam</p>
-            </div>
-
-            <img src="imagens/ilu-cafe.png" alt="Ilustração cafés">
-        </main>
-    </header>
-
-    <section class="lavouras">
-        <video src="video/cafezal.mp4" autoplay loop></video>
-
-        <div class="letra-branco">
-            <h2>CULTURA DO CAFÉ</h2>
-            <p>Ao adentrar os mercados de café, percebemos uma verdadeira expressão de diversidade cultural. Grãos
-                provenientes de diferentes regiões carregam consigo os aromas e sabores únicos do terroir, refletindo as
-                características geográficas e climáticas específicas de cada localidade. No preparo da bebida, a cultura
-                do café atinge seu ápice. Métodos de extração, rituais de degustação e a própria cerimônia de tomar café
-                variam de acordo com tradições culturais ao redor do mundo. Da cerimônia elaborada do café turco à
-                simplicidade acolhedora do café filtrado escandinavo, cada cultura imprime sua marca na experiência do
-                café.</p>
-            <button class="btn-bege">saiba mais</button>
-        </div>
-    </section>
-
-    <section class="loja">
-        <div>
-            <h2>INÍCIO DE UMA JORNADA</h2>
-            <p>Ao decidir iniciar minha própria loja de café, mergulhei em um universo repleto de aroma e sabor, animado
-                pela paixão que tenho por essa bebida extraordinária. A jornada começou com uma análise cuidadosa da
-                demanda, entendendo que, para criar um espaço verdadeiramente cativante, era crucial compreender as
-                preferências dos apreciadores de café na minha comunidade.Essa análise da demanda me proporcionou
-                insights valiosos sobre os gostos e preferências que moldariam o perfil da minha loja de café. Essa
-                análise da demanda me proporcionou insights valiosos sobre os gostos e preferências que moldariam o
-                perfil da minha loja de café. Optei por oferecer uma variedade de blends, explorando diferentes origens
-                e métodos de torra para atender aos paladares mais variados.
-            </p>
-
-            <ul type="circle">
-                <li>
-                    <h3>Demanda</h3>
-                </li>
-
-                <li>
-                    <h3>Estoque</h3>
-                </li>
-
-                <li>
-                    <h3>Qualidade</h3>
-                </li>
+            <ul class="nav-links">
+                <li><a href="#loja">Experiências</a></li>
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
-            <button class="btn-marrom">saiba mais</button>
-        </div>
+            <div class="nav-actions">
+                <a class="button button-ghost" href="#newsletter">Newsletter</a>
+                <a class="button button-primary" href="#loja">Comprar agora</a>
+            </div>
+        </nav>
 
-        <figure>
-            <div id="img1">
-                <img src="imagens/cidade.jpg" alt="Cidade da loja">
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow">Do grão à xícara</p>
+                <h1>A energia que transforma histórias</h1>
+                <p>Saboreie cafés de origem única, torrados em pequenos lotes e pensados para encantar cada momento. Do
+                    primeiro aroma ao último gole, celebramos a arte do café com experiências imersivas e acolhedoras.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#loja">Explorar blends</a>
+                    <a class="button button-ghost" href="#cultura">Conhecer a torrefação</a>
+                </div>
             </div>
 
-            <div id="img2">
-                <img src="imagens/loja.jpg" alt="Loja">
+            <figure class="hero-figure">
+                <img src="assets/imagens/ilu-cafe.png" alt="Ilustração de barista preparando café">
+            </figure>
+        </section>
+    </header>
+
+    <main>
+        <section class="culture" id="cultura">
+            <div class="culture-media">
+                <video src="assets/video/cafezal.mp4" autoplay loop muted playsinline aria-label="Paisagem de cafezal ao amanhecer"></video>
             </div>
-        </figure>
-    </section>
 
-    <section class="blog">
-        <div class="texto letra-branco">
-            <h2>BLOG DA EMPRESA</h2>
-            <p>Que cada gole de café seja um despertar para novas possibilidades e uma dose extra de inspiração para
-                enfrentar o dia com entusiasmo.
-            </p>
-        </div>
-
-        <article>
-            <a href="#" class="card letra-branco">
-                <img src="imagens/fruto.jpg" alt="Cultivo de café próprio">
-                <div>
-                    <h3>Cultivo Próprio</h3>
-                    <p>Esse compromisso com o cultivo próprio não é apenas uma busca pela autenticidade. Nas flores
-                        que antecipam a promessa dos frutos e nas mãos dedicadas que colhem cada grão criando uma
-                        experiência que vai além do paladar.</p>
-                </div>
-            </a>
-
-            <a href="#" class="card letra-branco">
-                <img src="imagens/lavoura.jpg" alt="Produtos de boa antecedência">
-                <div>
-                    <h3>Produto de Ótima Qualidade</h3>
-                    <p>A excelência dos produtos, aliada à antecedência na preparação, não apenas garante uma
-                        experiência superior, mas também cria a base sólida para conquistar o paladar e a confiança
-                        de quem busca o melhor em cada detalhe.</p>
-                </div>
-            </a>
-
-            <a href="#" class="card letra-branco">
-                <img src="imagens/interior-loja.jpg" alt="Estantes Equipadascom produtos">
-                <div>
-                    <h3>Nossa Estantes Bem Equipadas</h3>
-                    <p>Estantes repletas de produtos não é apenas uma exibição de sabores, mas uma celebração da
-                        diversidade cultural, oferecendo uma experiência única e contando a história rica </p>
-                </div>
-            </a>
-
-            <a href="#" class="card letra-branco">
-                <img src="imagens/livro_cafe.jpg" alt="Livro ao lado de uma xícara de café">
-                <div>
-                    <h3>Uma Boa Leitura Não Pode Faltar, né?</h3>
-                    <p>Explore as páginas de um bom livro acompanhado da mais deliciosa xícara de café, uma
-                        combinação perfeita para enriquecer não apenas a mente, mas também o paladar.</p>
-                </div>
-            </a>
-        </article>
-    </section>
-
-    <footer>
-        <div class="email">
-            <div>
-                <h4>Newsletter</h4>
-                <p>Receba E-mails sobre nós, sobre eventos, lançamentos de novos produtos e muitos mais</p>
-                <input type="email" name="e-mail" id="email" placeholder="E-mail" required>
-                <button class="btn-marrom">Enviar</button>
+            <div class="culture-copy">
+                <p class="eyebrow eyebrow-light">Cultura do café</p>
+                <h2>Do terroir ao ritual da xícara</h2>
+                <p>Nascer do sol em Minas, cheiros da Colômbia e toques cítricos da Etiópia. Cada grão carrega o clima,
+                    o solo e a história de sua comunidade. Na Casa Café celebramos esses rituais, conectando produtores a
+                    apreciadores com respeito, transparência e técnicas precisas de torra.</p>
+                <button class="button button-light">Descubra micro lotes</button>
             </div>
-        </div>
+        </section>
 
-        <div class="rodape">
-            <div>
-                <img class="logo" src="imagens/logo.png" alt="Logo">
+        <section class="journey" id="loja">
+            <div class="journey-copy">
+                <p class="eyebrow">Nossa jornada</p>
+                <h2>Um espaço para inspirar encontros</h2>
+                <p>Planejamos a Casa Café como um refúgio urbano: menu sazonal, biblioteca compartilhada e experiências
+                    sensoriais que aproximam pessoas. Da curadoria de grãos ao treinamento de baristas, buscamos
+                    excelência sustentável e parcerias de longo prazo.</p>
+
+                <ul class="pillars" aria-label="Pilares da Casa Café">
+                    <li>
+                        <h3>Demanda consciente</h3>
+                        <p>Produção alinhada com a colheita e com a transparência em toda cadeia.</p>
+                    </li>
+                    <li>
+                        <h3>Estoque vivo</h3>
+                        <p>Torramos semanalmente para preservar notas aromáticas e frescor.</p>
+                    </li>
+                    <li>
+                        <h3>Qualidade sensorial</h3>
+                        <p>Metodologias SCA e degustações guiadas para cada novo lote.</p>
+                    </li>
+                </ul>
+
+                <a class="button button-primary" href="#contato">Agendar visita guiada</a>
+            </div>
+
+            <figure class="journey-gallery">
+                <img src="assets/imagens/cidade.jpg" alt="Vista aérea da cidade onde fica a Casa Café">
+                <img src="assets/imagens/loja.jpg" alt="Interior acolhedor da Casa Café">
+            </figure>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="blog-intro">
+                <p class="eyebrow eyebrow-light">Diário da Casa</p>
+                <h2>Histórias frescas para o seu próximo gole</h2>
+                <p>Conteúdos quinzenais com bastidores da torrefação, viagens às fazendas parceiras e dicas para elevar
+                    sua experiência em casa.</p>
+            </div>
+
+            <div class="blog-grid" role="list">
+                <a class="blog-card" href="#" role="listitem">
+                    <img src="assets/imagens/fruto.jpg" alt="Cerejas de café maduras na planta">
+                    <div class="blog-card-body">
+                        <h3>Colheita regenerativa</h3>
+                        <p>Como nossos parceiros cuidam do solo e preservam biodiversidade a cada safra.</p>
+                    </div>
+                </a>
+
+                <a class="blog-card" href="#" role="listitem">
+                    <img src="assets/imagens/lavoura.jpg" alt="Produtor selecionando grãos de café">
+                    <div class="blog-card-body">
+                        <h3>Do grão ao perfil</h3>
+                        <p>Processos de torra que realçam notas florais, caramelizadas ou frutadas.</p>
+                    </div>
+                </a>
+
+                <a class="blog-card" href="#" role="listitem">
+                    <img src="assets/imagens/interior-loja.jpg" alt="Prateleiras com produtos e acessórios de café">
+                    <div class="blog-card-body">
+                        <h3>Design para cafés</h3>
+                        <p>Como criamos ambientes que acolhem e estimulam conexões significativas.</p>
+                    </div>
+                </a>
+
+                <a class="blog-card" href="#" role="listitem">
+                    <img src="assets/imagens/livro_cafe.jpg" alt="Livro aberto ao lado de uma xícara de café">
+                    <div class="blog-card-body">
+                        <h3>Leituras para acompanhar</h3>
+                        <p>Sugestões de livros e trilhas sonoras para um ritual de café inspirado.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+        <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+            <div class="newsletter-card">
+                <h2 id="newsletter-title">Newsletter</h2>
+                <p>Receba convites para eventos, pré-venda de microlotes e conteúdos especiais direto na sua caixa de
+                    entrada.</p>
+                <form class="newsletter-form" action="#" method="post">
+                    <label class="sr-only" for="newsletter-email">E-mail</label>
+                    <input id="newsletter-email" type="email" name="email" placeholder="nome@exemplo.com" autocomplete="email" required>
+                    <button type="submit" class="button button-primary">Inscrever</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer-info">
+            <div class="footer-brand">
+                <img class="brand-logo" src="assets/imagens/logo.png" alt="Logotipo Casa Café">
                 <p>Sabores que despertam paixões, café que inspira momentos.</p>
-                <a href="#"><img class="rede-sociais" src="../projeto03/imagens/facebook.png" alt="Logo facebook"></a>
-                <a href="#"><img class="rede-sociais" src="../projeto03/imagens/twitter.png" alt="Logo twitter"></a>
-                <a href="#"><img class="rede-sociais" src="../projeto03/imagens/youtube.png" alt="Logo youtube"></a>
+                <div class="social-links" aria-label="Redes sociais">
+                    <a href="#" aria-label="Facebook"><span>Facebook</span></a>
+                    <a href="#" aria-label="Instagram"><span>Instagram</span></a>
+                    <a href="#" aria-label="YouTube"><span>YouTube</span></a>
+                </div>
             </div>
-            <div class="link">
-                <h4>Empresa</h4>
-                <a href="#">Contato</a>
-                <a href="#">Onde Estamos Localizados</a>
-                <a href="#">Política da Empresa</a>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#cultura">Quem somos</a></li>
+                        <li><a href="#contato">Onde estamos</a></li>
+                        <li><a href="#">Política da casa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="#loja">Assinatura</a></li>
+                        <li><a href="#loja">Gift cards</a></li>
+                        <li><a href="#loja">Linha varejo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Condições especiais</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="link">
-                <h4>Produtos</h4>
-                <a href="#">Compre Aqui</a>
-                <a href="#">Revenda</a>
-                <a href="#">Disponível</a>
-            </div>
-            <div class="link">
-                <h4>Perguntas Frequentes</h4>
-                <a href="#">Quem nós somos</a>
-                <a href="#">Quais os valores para revenda</a>
-                <a href="3">Onde nós contatar</a>
-                <a href="#">Com quem negociar</a>
-            </div>
-        </div>
+        </section>
+
+        <p class="footer-meta">© 2025 Casa Café. Todos os direitos reservados.</p>
     </footer>
 </body>
 
